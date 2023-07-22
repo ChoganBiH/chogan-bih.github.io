@@ -1,0 +1,453 @@
+:root {
+    --background-color: #181f39;
+    --special-background-color: #333a5e;
+    --background-color-hover: #373c55;
+    --button-color: #d62c58;
+    --text-color: #f2f2fb;
+  
+
+    --transition-default: 0.4s ease;
+}
+
+  /*
+::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-dark-70);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--background-orange);
+  background: var(--background-orange-yellow);
+  border-radius: 2rem;
+}
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  
+  html,
+  body {
+      font-family: "Poppins", sans-serif;
+      color: var(--text-color);
+      background-color: var(--background-color);
+      height: 100%;
+  }
+
+.landing-page{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.landing-page .left-box{
+    display: block;
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+.landing-page .left-box h1{
+    margin-top: 250px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    margin-bottom: 5px;
+}
+.landing-page .left-box h2{
+    font-size: 5rem;
+    margin-bottom: 70px;
+}
+.landing-page .left-box h3{
+    font-size: 1.5rem;
+    margin-bottom: 130px;
+}
+.landing-page .left-box button{
+    font-size: 2.9rem;
+    padding: 10px 70px 10px 70px;
+    border-radius: 30px;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border: none;
+    border: 2px solid var(--button-color);
+    transition: var(--transition-default);
+}
+.landing-page .left-box button:hover{
+    transition: var(--transition-default);
+    background-color: var(--background-color-hover);
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#mobile-version-button-landing-page{
+    display: none;
+    margin-top: 40px;
+}
+#mobile-version-button-landing-page a{
+    text-decoration: none;
+}
+#mobile-version-button-landing-page button{
+    display: flex;
+    margin: auto;
+    font-size: 2.9rem;
+    padding: 10px 70px 10px 70px;
+    border-radius: 30px;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border: none;
+    border: 2px solid var(--button-color);
+    transition: var(--transition-default);
+}
+#mobile-version-button-landing-page button:hover{
+    transition: var(--transition-default);
+    background-color: var(--background-color-hover);
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.landing-page .right-box{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.landing-page .right-box img{
+    margin-top: 150px;
+    height: 650px;
+}
+.second-section{
+    display: block;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.second-section img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1300px;
+    height: auto;
+}
+.third-section{
+    width: 100%;
+    height: auto;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 200px;
+    margin-top: 200px;
+}
+.third-section .first-half{
+    display: flex;
+    height: auto;
+    background-color: var(--special-background-color);
+    margin-bottom: 100px;
+}
+.third-section .first-half .left-box{
+    display: flex;
+}
+.third-section .first-half .left-box img{
+    display: block;
+    margin: auto;
+    max-width: 400px;
+    height: auto;
+}
+.third-section .first-half .right-box{
+    text-align: center;
+}
+.third-section .first-half .right-box h1{
+    font-size: 1.5rem;
+    padding: 50px;
+}
+.third-section .second-half{
+    display: flex;
+    height: auto;
+    background-color: var(--special-background-color);
+}
+.third-section .second-half .left-box{
+    display: flex;
+}
+.third-section .second-half .left-box img{
+    display: block;
+    margin: auto;
+    max-width: 400px;
+    height: auto;
+}
+.third-section .second-half .right-box{
+    text-align: center;
+}
+.third-section .second-half .right-box h1{
+    font-size: 1.5rem;
+    padding: 50px;
+}
+#second-half-mobile-version{
+    display: none;
+}
+.fourth-section{
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+}
+.fourth-section h1{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.fourth-section table{
+    border: 3px solid black;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    border-spacing: 0;
+}
+.fourth-section h1 table, tr, th, td{
+    padding: 20px;
+    font-size: 1.2rem;
+}
+.fourth-section th{
+    min-width: 200px;
+}
+.fourth-section button{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-size: 1.2rem;
+    padding: 10px 70px 10px 70px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: none;
+    border: 2px solid var(--button-color);
+    transition: var(--transition-default);
+}
+.fourth-section button:hover{
+    transition: var(--transition-default);
+    background-color: var(--background-color-hover);
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#all-luxury{
+    display: none;
+}
+#all-unisex-muski{
+    display: none;
+}
+#all-zenski{
+    display: none;
+}
+#all-muski{
+    display: none;
+}
+.fifth-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+.fifth-section .contact-number-box{
+    width: 300px;
+    height: 250px;
+    max-height: 250px;
+    max-width: 300px;
+    background-color: #333a5e;
+    text-align: center;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.fifth-section .contact-number-box span, ion-icon{
+    background-color: var(--background-color);
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+.fifth-section .contact-number-box img{
+    background-color: var(--background-color);
+    width: 90px;
+    height: 90px;
+    padding: 20px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+.fifth-section .contact-number-box h1{
+    padding-top: 20px;
+    font-size: 1.6rem;
+}
+.fifth-section .contact-number-box button{
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 1.2rem;
+    padding: 10px 70px 10px 70px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: none;
+    border: 2px solid var(--button-color);
+    transition: var(--transition-default);
+}
+.fifth-section .contact-number-box button:hover{
+    transition: var(--transition-default);
+    background-color: var(--background-color-hover);
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+@media (max-width: 1620px){
+    #second-half-mobile-version{
+        display: block;
+    }
+    #second-half-computer-version{
+        display: none;
+    }
+    .third-section .first-half{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 1520px){
+    .landing-page{
+        flex-direction: column;
+    }
+    .landing-page .left-box{
+        width: 100%;
+    }
+    .landing-page .left-box h1{
+        margin-top: 50px;
+        font-size: 3rem;
+    }
+    .landing-page .left-box h2{
+        margin-top: 20px;
+        font-size: 4rem;
+        margin-bottom: 0;
+    }
+    .landing-page .left-box h3{
+        margin-top: 5px;
+        font-size: 1.4rem;
+        margin-bottom: 0;
+    }
+    .landing-page .left-box button{
+        display: none;
+    }
+    #mobile-version-button-landing-page{
+        display: block;
+        margin-top: 100px;
+    }
+    .landing-page .right-box img{
+        margin-top: 100px;
+        height: 500px;
+    }
+}
+@media (max-width: 1400px){
+    .second-section{
+        width: 100%;
+    }
+    .second-section img{
+        width: 75%;
+    }
+}
+@media (max-width: 1100px){
+    .landing-page .left-box h1{
+        margin-top: 50px;
+        font-size: 2rem;
+    }
+    .landing-page .left-box h2{
+        margin-top: 20px;
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+    .landing-page .left-box h3{
+        margin-top: 5px;
+        font-size: 1.15rem;
+        margin-bottom: 0;
+    }
+    #mobile-version-button-landing-page button{
+        font-size: 2rem;
+    }
+    #mobile-version-button-landing-page{
+        margin-top: 40px;
+    }
+    .landing-page .right-box img{
+        margin-top: 50px;
+    }
+    .third-section .first-half .left-box img{
+        width: 100%;
+    }
+    .third-section .second-half .left-box img{
+        width: 100%;
+    }
+    .third-section{
+        width: 100%;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-bottom: 200px;
+        margin-top: 200px;
+    }
+    .third-section .first-half .right-box h1{
+        font-size: 1.3rem;
+    }
+    .third-section .second-half .right-box h1{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 860px){
+    .fourth-section{
+        padding-bottom: 0;
+    }
+    .fourth-section table{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .fourth-section h1 table, tr, th, td{
+        padding: 15px;
+        font-size: 1rem;
+    }
+    .fourth-section th{
+        min-width: auto;
+    }
+    .fourth-section button{
+        margin-top: 30px;
+        margin-bottom: 60px;
+        font-size: 1rem;
+        padding: 6px 30px 6px 30px;
+    }
+}
+@media (max-width: 650px){
+    .third-section{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media (max-width: 500px){
+    .third-section .first-half .right-box h1{
+        font-size: 1rem;
+    }
+    .third-section .second-half .right-box h1{
+        font-size: 1rem;
+    }
+    .landing-page .right-box img{
+        display: flex;
+        padding-top: 30px;
+        margin: auto;
+        width: 80%;
+        height: auto;
+    }
+}
+@media (max-width: 410px){
+    .fourth-section h1 table, tr, th, td{
+        padding: 8px;
+        font-size: 0.7rem;
+    }
+    .fourth-section button{
+        font-size: 0.7rem;
+        padding: 6px 30px 6px 30px;
+    }
+    .third-section .first-half .right-box h1{
+        padding: 10px;
+    }
+    .third-section .second-half .right-box h1{
+        padding: 10px;
+    }
+}
